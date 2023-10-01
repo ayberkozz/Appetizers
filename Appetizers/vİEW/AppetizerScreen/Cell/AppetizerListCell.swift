@@ -29,7 +29,7 @@ struct AppetizerListCell: View {
 
             VStack(alignment: .leading, spacing: 5) {
                 Text(appetizer.name)
-                    .font(.title2)
+                    .font(.title2) 
                     .fontWeight(.medium)
                 Text("$\(appetizer.price, specifier: "%.2f")")
                     .foregroundColor(.secondary)
