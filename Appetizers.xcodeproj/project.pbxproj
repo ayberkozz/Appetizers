@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B268FEF2ACDECC800745EA3 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B268FEE2ACDECC800745EA3 /* APButton.swift */; };
+		4B268FF12ACDEE1500745EA3 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B268FF02ACDEE1500745EA3 /* XDismissButton.swift */; };
+		4B268FF62ACDFEE400745EA3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B268FF52ACDFEE400745EA3 /* AccountViewModel.swift */; };
+		4B268FF82ACE04DF00745EA3 /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B268FF72ACE04DF00745EA3 /* String + Ext.swift */; };
+		4B268FFB2ACE0C6600745EA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B268FFA2ACE0C6500745EA3 /* User.swift */; };
 		4BF2FA542AC83C3F00BEBE73 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2FA532AC83C3F00BEBE73 /* AppetizersApp.swift */; };
 		4BF2FA562AC83C3F00BEBE73 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF2FA552AC83C3F00BEBE73 /* AppetizerTabView.swift */; };
 		4BF2FA582AC83C4300BEBE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF2FA572AC83C4300BEBE73 /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B268FEE2ACDECC800745EA3 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		4B268FF02ACDEE1500745EA3 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		4B268FF52ACDFEE400745EA3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		4B268FF72ACE04DF00745EA3 /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
+		4B268FFA2ACE0C6500745EA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4BF2FA502AC83C3F00BEBE73 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF2FA532AC83C3F00BEBE73 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		4BF2FA552AC83C3F00BEBE73 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -56,6 +66,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B268FF22ACDF0A500745EA3 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				4BF2FA7A2AC9DDD900BEBE73 /* ActivityIndicator.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		4B268FF32ACDF0C300745EA3 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				4BF2FA552AC83C3F00BEBE73 /* AppetizerTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		4B268FF42ACDFECD00745EA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B268FF52ACDFEE400745EA3 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B268FF92ACE084300745EA3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4BF2FA632AC8B40600BEBE73 /* AccountView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		4BE00BCA2ACDEC08002E7E1F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4B268FEE2ACDECC800745EA3 /* APButton.swift */,
+				4B268FF02ACDEE1500745EA3 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		4BF2FA472AC83C3F00BEBE73 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +126,9 @@
 		4BF2FA522AC83C3F00BEBE73 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				4BF2FA532AC83C3F00BEBE73 /* AppetizersApp.swift */,
 				4BF2FA7C2AC9DE8A00BEBE73 /* Extensions */,
 				4BF2FA792AC9DDC100BEBE73 /* Views */,
-				4BF2FA532AC83C3F00BEBE73 /* AppetizersApp.swift */,
 				4BF2FA772AC9D79400BEBE73 /* Screens */,
 				4BF2FA742AC9D73500BEBE73 /* Model */,
 				4BF2FA752AC9D75000BEBE73 /* Service */,
@@ -110,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF2FA672AC8BF8D00BEBE73 /* Appetizer.swift */,
+				4B268FFA2ACE0C6500745EA3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,7 +186,7 @@
 		4BF2FA772AC9D79400BEBE73 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4BF2FA552AC83C3F00BEBE73 /* AppetizerTabView.swift */,
+				4B268FF32ACDF0C300745EA3 /* TabView */,
 				4BF2FA732AC9D72400BEBE73 /* AppetizerScreen */,
 				4BF2FA842ACA166C00BEBE73 /* AccountScreen */,
 				4BF2FA852ACA167D00BEBE73 /* OrderScreen */,
@@ -154,7 +206,8 @@
 		4BF2FA792AC9DDC100BEBE73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4BF2FA7A2AC9DDD900BEBE73 /* ActivityIndicator.swift */,
+				4BE00BCA2ACDEC08002E7E1F /* Buttons */,
+				4B268FF22ACDF0A500745EA3 /* Indicator */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF2FA7D2AC9DEA100BEBE73 /* Color+Ext.swift */,
+				4B268FF72ACE04DF00745EA3 /* String + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,7 +241,8 @@
 		4BF2FA842ACA166C00BEBE73 /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4BF2FA632AC8B40600BEBE73 /* AccountView.swift */,
+				4B268FF42ACDFECD00745EA3 /* ViewModel */,
+				4B268FF92ACE084300745EA3 /* Screen */,
 			);
 			path = AccountScreen;
 			sourceTree = "<group>";
@@ -270,9 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B268FF82ACE04DF00745EA3 /* String + Ext.swift in Sources */,
 				4BF2FA682AC8BF8D00BEBE73 /* Appetizer.swift in Sources */,
 				4BF2FA6A2AC8C85900BEBE73 /* AppetizerListCell.swift in Sources */,
 				4BF2FA642AC8B40600BEBE73 /* AccountView.swift in Sources */,
+				4B268FEF2ACDECC800745EA3 /* APButton.swift in Sources */,
 				4BF2FA702AC9D3DC00BEBE73 /* AppetizerListViewModel.swift in Sources */,
 				4BF2FA7E2AC9DEA100BEBE73 /* Color+Ext.swift in Sources */,
 				4BF2FA7B2AC9DDD900BEBE73 /* ActivityIndicator.swift in Sources */,
@@ -284,6 +341,9 @@
 				4BF2FA722AC9D71500BEBE73 /* Alert.swift in Sources */,
 				4BF2FA622AC8B3FB00BEBE73 /* AppetizerListView.swift in Sources */,
 				4BF2FA662AC8B41600BEBE73 /* OrderView.swift in Sources */,
+				4B268FF62ACDFEE400745EA3 /* AccountViewModel.swift in Sources */,
+				4B268FF12ACDEE1500745EA3 /* XDismissButton.swift in Sources */,
+				4B268FFB2ACE0C6600745EA3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
