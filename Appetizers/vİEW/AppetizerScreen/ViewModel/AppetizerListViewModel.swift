@@ -37,7 +37,7 @@ final class AppetizerListViewModel: ObservableObject {
                 } else {
                     alertItem = AlertContext.invalidResponse
                 }
-                alertItem = AlertContext.invalidResponse
+//                alertItem = AlertContext.invalidResponse
                 isLoading = false
             }
         }
